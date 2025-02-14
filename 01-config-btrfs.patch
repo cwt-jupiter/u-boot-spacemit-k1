@@ -1,0 +1,38 @@
+diff -r bc7fc5c6e4c0 .config
+--- a/.config	Fri Feb 14 12:05:14 2025 +0700
++++ b/.config	Fri Feb 14 12:07:09 2025 +0700
+@@ -721,7 +721,7 @@
+ #
+ # Filesystem commands
+ #
+-# CONFIG_CMD_BTRFS is not set
++CONFIG_CMD_BTRFS=y
+ # CONFIG_CMD_EROFS is not set
+ CONFIG_CMD_EXT2=y
+ CONFIG_CMD_EXT4=y
+@@ -2052,7 +2052,7 @@
+ #
+ # File systems
+ #
+-# CONFIG_FS_BTRFS is not set
++CONFIG_FS_BTRFS=y
+ # CONFIG_FS_CBFS is not set
+ # CONFIG_SPL_FS_CBFS is not set
+ CONFIG_FS_EXT4=y
+@@ -2123,7 +2123,7 @@
+ #
+ # Hashing Support
+ #
+-# CONFIG_BLAKE2 is not set
++CONFIG_BLAKE2=y
+ CONFIG_SHA1=y
+ CONFIG_SHA256=y
+ # CONFIG_SHA512 is not set
+@@ -2136,6 +2136,7 @@
+ # CONFIG_SPL_SHA_HW_ACCEL is not set
+ CONFIG_MD5=y
+ CONFIG_CRC32=y
++CONFIG_CRC32C=y
+ CONFIG_XXHASH=y
+ 
+ #
