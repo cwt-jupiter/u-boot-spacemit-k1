@@ -39,6 +39,10 @@ build() {
 
 package() {
   cd $_srcname
+  install -Dm644 bootinfo_emmc.bin "$pkgdir/usr/share/$pkgname/bootinfo_emmc.bin"
+  install -Dm644 bootinfo_sd.bin "$pkgdir/usr/share/$pkgname/bootinfo_sd.bin"
+  install -Dm644 bootinfo_spinand.bin "$pkgdir/usr/share/$pkgname/bootinfo_spinand.bin"
+  install -Dm644 bootinfo_spinor.bin "$pkgdir/usr/share/$pkgname/bootinfo_spinor.bin"
   install -Dm644 FSBL.bin "$pkgdir/usr/share/$pkgname/FSBL.bin"
   install -Dm644 u-boot-env-default.bin "$pkgdir/usr/share/$pkgname/u-boot-env-default.bin"
   install -Dm644 u-boot.itb "$pkgdir/usr/share/$pkgname/u-boot.itb"
